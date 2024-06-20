@@ -1,0 +1,30 @@
+Setup
+ - vite and react, tailwind setup with vite from tailwind docs
+
+Folder creation
+ - assets 
+ - components - cpntains all our components, and the Layout
+ - constants
+ - hooks - custom hooks we'll use
+ - pages - 
+ - services - services we'll use in the app, e.g auth
+ - store - for our redux toolkit. we're using redux instead of react context api for state management
+ - utils
+
+
+Layout and Pages
+inside components, we have a mainlayout.jsx file. This file acts as the template/layout for every page that comes with the header and footer, the main content/components for the individual pages are then passed in as 'children' props
+we import this mainlayout.jsx inside the homepage.jsx, the homepage.jsx is for the landing page, this page is returned inside App.jsx as the first component. 
+
+Inside pages folder, we have created a folder named 'home', this home folder contains the homepage.jsx, and a container folder that contains the individual components for our homepage, inside the container folder we create our first child component, the 'Hero' component, and we pass this hero component as a child 'in between the Mainlayout tag' in out Homepage. 
+
+***because we used the 'children' props in main layout, whatevr is passed in between mainlayout  tag will appear in between header and footer
+
+
+<App.jsx>
+  <Homepage>
+    <Mainlayout  ----> (Header and footer)>
+      <Hero/>
+    <Mainlayout/>
+  <Homepage/>
+<App.jsx/>
