@@ -21,7 +21,7 @@ const CTA = () => {
 				/>
 			</svg>
 
-			<section className="relative bg-dark-hard px-5">
+			<section className="relative bg-dark-hard px-5 py-5">
 				<div className="container grid grid-cols-12 mx-auto">
 					{/* this div only visible on mobile */}
 					<div className="col-span-12 md:hidden text-center px-5">
@@ -49,7 +49,7 @@ const CTA = () => {
 							<img
 								src={cta}
 								alt="call to action"
-								className="w-[578px] h-[472px]"
+								className="w-[466px] h-[385px]"
 							/>
 						</div>
 						<div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
